@@ -27,6 +27,11 @@ var Main = module(function() {
 			$(document).trigger('gotData');
 
 		}, 'json');
+
+		// Para evitar el scroll en el parent frame
+		$('.dropzone-area').on('touchmove', function(e) {
+			e.preventDefault();
+		});
 	}
 
 	function loading(isLoading) {
