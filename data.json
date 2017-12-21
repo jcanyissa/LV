@@ -1,9 +1,9 @@
 [
+	["Ciutadans", 				"cs", 		"#f18624", 36],
+	["Junts per Cat", 			"dil", 		"#24256d", 33],
 	["Esquerra Republicana", 	"erc", 		"#deae40", 32],
-	["Junts per Cat", 			"dil", 		"#24256d", 34],
-	["Cat en Comú", 			"podemos", 	"#682f64", 8],
-	["Ciutadans", 				"cs", 		"#f18624", 35],
 	["PSC", 					"psoe", 	"#fc2202", 18],
+	["Cat en Comú", 			"podemos", 	"#682f64", 8],
 	["PP Cat", 					"pp", 		"#00a4e3", 4],
 	["CUP", 					"cc", 		"#f1e438", 4]
 ]
