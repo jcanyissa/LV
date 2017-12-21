@@ -11,7 +11,7 @@ var Main = module(function() {
 	function init() {
 
 		loading(true)
-		$.get('https://cdn.rawgit.com/jcanyissa/LV/master/data_dia9.json', function(res) {
+		$.get('https://cdn.rawgit.com/jcanyissa/LV/master/data.json', function(res) {
 			loading(false);
 
 			_.each(res, function(item, index) {
