@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://rawcdn.githack.com/jcanyissa/LV/128a4628cce93f3c6c447dc85f4570c96cfff408/searcher-box.css">
+  </head>
+  <body>
+    <div class="col-12 col-md-8">
+
+      <div id="caja_buscador" class="searcher-box">
+        <div class="searcher-box__text">
+          <p>
+            <span class="searcher-box__text--strong">¡Comprueba tu suerte!</span>
+            Inroduce tu número y comprueba si ha sido premiado
+          </p>
+        </div>
+        <div class="searcher-box__searcher">
+          <form class="searcher-box__searcher--form" action="#">
+            <input type="text" name="numero" value="" onkeypress="#" maxlength="5" class="searcher-box__searcher--input">
+            <input type="submit" value="Busca el premio" class="searcher-box__searcher--submit">
+          </form>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="../static/js/ext/jquery.min.js"></script>
+    <!-- Popper is used for dropdown, call it before bootstrap JS-->
+    <script src="../static/js/ext/popper.min.js"></script>
+    <script src="../static/js/ext/bootstrap.min.js"></script>
+    <script src="../static/js/ext/bootstrap-tabdrop.js"></script>
+
+  </body>
+</html>
