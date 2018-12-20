@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdn.rawgit.com/duroty/responsive/master/app.embed.js"></script>
+    <style>
+      *{-webkit-font-smoothing:antialiased}body{color:#333}@font-face{font-family:"font-results";src:url("../fonts/nickel-results.woff") format("woff");font-weight:normal;font-style:normal}@font-face{font-family:'lv';src:url("../fonts/lv.woff") format("woff");font-weight:normal;font-style:normal}@font-face{font-display:swap;font-family:'TiemposHeadline-Regular';src:url(../fonts/TiemposTextWeb-Regular.woff);font-weight:normal;font-style:normal}@font-face{font-display:swap;font-family:'TiemposHeadline-Semibold';src:url(../fonts/TiemposTextWeb-Semibold.woff);font-weight:normal;font-style:normal}@font-face{font-display:swap;font-family:'TiemposHeadline-Medium';src:url(../fonts/TiemposHeadlineWeb-Medium.woff);font-weight:normal;font-style:normal}@font-face{font-display:swap;font-family:'allerbold';src:url(../fonts/aller_bd-webfont.woff2);font-weight:normal;font-style:normal}@font-face{font-display:swap;font-family:'allerregular';src:url(../fonts/aller_rg-webfont.woff2);font-weight:normal;font-style:normal}@font-face{font-display:swap;font-family:'roboto-regular';src:url(../fonts/roboto-regular.ttf);font-weight:normal;font-style:normal}@font-face{font-display:swap;font-family:'roboto-bold';src:url(../fonts/roboto-bold.ttf);font-weight:normal;font-style:normal}.searcher-box{background-color:#166186;font-size:12px;line-height:14px;padding:6px 5px;font-family:Arial, Helvetica, sans-serif}.searcher-box__text{color:#fff;margin-bottom:10px}.searcher-box__text--strong{font-family:"TiemposHeadline-Semibold", serif;display:block;font-size:18px;line-height:20px;margin-bottom:5px}.searcher-box__searcher{background-color:#4797b2;padding:10px}.searcher-box__searcher--form{text-align:center}.searcher-box__searcher--input{vertical-align:middle;border:1px solid #166186;color:#166186;width:46%;height:34px;border-radius:5px;text-align:center;letter-spacing:5px;font-size:30px}.searcher-box__searcher--submit{vertical-align:middle;background:transparent url("../static/img/loteria-de-navidad-image.png") no-repeat left top;font-size:14px;line-height:10px;font-weight:700;overflow:hidden;text-align:center;padding-left:35px;background-position:-781px -88px;border:none;color:#fff;height:34px;width:165px;text-align:left;cursor:pointer}
+    </style>
+  </head>
+  <body>
+
+    <div id="caja_buscador" class="searcher-box">
+        <div class="searcher-box__text">
+          <p>
+            <span class="searcher-box__text--strong">¡Comprueba tu suerte!</span>
+            Inroduce tu número y comprueba si ha sido premiado
+          </p>
+        </div>
+        <div class="searcher-box__searcher">
+          <form class="searcher-box__searcher--form" method="GET" action="https://www.lavanguardia.com/loterias/loteria-navidad/" target="_top">
+            <input type="text" name="numero" value="" maxlength="5" class="searcher-box__searcher--input">
+            <input type="submit" value="Busca el premio" class="searcher-box__searcher--submit">
+          </form>
+        </div>
+      </div>
+
+  </body>
+</html>
