@@ -1,0 +1,12 @@
+[
+	["PSOE", 					"psoe", 	"#fc2304", 119],
+	["PP",	 					"pp", 		"#00a5e7", 97],
+	["Ciudadanos", 				"cs", 		"#eb540f", 60],
+	["Podemos",			 		"podemos", 	"#6a3166", 32],
+	["ERC",				 		"erc", 		"#ffbf2f", 11],
+	["CDC",				 		"dil", 		"#01408f", 6],
+	["PNV",	 					"pnv", 		"#009731", 6],
+	["CC",				 		"cc", 		"#f5e50c", 1],
+	["VOX",				 		"vox", 		"#66CC33", 16],
+	["Bildu",	 				"bildu", 	"#b8cb02", 2]
+]
