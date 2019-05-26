@@ -11,7 +11,7 @@ var Main = module(function() {
 	function init() {
 
 		loading(true)
-		$.get('https://rawcdn.githack.com/jcanyissa/LV/b4bc5827a8fcad46c0a7efe5182c7752d645fd0f/data_pactometro26M_ayto_barcelona.json', function(res) {
+		$.get('https://rawcdn.githack.com/jcanyissa/LV/7e5c382e7416aeb11c0807d78bc925fdb12ba99c/data_pactometro26M_ayto_barcelona1.json', function(res) {
 			loading(false);
 
 			_.each(res, function(item, index) {
