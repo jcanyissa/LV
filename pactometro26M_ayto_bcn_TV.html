@@ -1,0 +1,147 @@
+﻿<!doctype html>
+<html lang="es">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>Pactómetro La Vanguardia</title>
+
+	<meta charset="utf-8">
+
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,100,700&subset=latin,latin-ext">
+	<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/Mariolv/PRUEBAS-LV/1feee6b1/styles-censurometro.css">
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.13.1/lodash.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/interact.js/1.2.9/interact.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
+	<script type="text/javascript" src="https://cdn.rawgit.com/Mariolv/PRUEBAS-LV/a223d57a/jquery.animateNumber.min.js"></script>
+	<script type="text/javascript" src="https://rawcdn.githack.com/jcanyissa/LV/b1847235af00e59578984b9a826fc7386dcc641f/app_pactometro26M_ayto_barcelona1.js"></script>
+	<script src="https://cdn.rawgit.com/duroty/responsive/master/app.embed.js"></script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+		
+	<div class="loading" style="display: none;"></div>
+
+	<!-- START DUROTY -->
+	<style type="text/css">
+		body {
+			margin-top: 50px;
+		}
+
+		.item {
+			width: 70px;
+			height: 70px;
+		}
+
+		.dropzone {
+			height: 130px;
+			padding-top: 30px;
+		}
+
+		.navbar-lv {
+			background: #001c4c;
+			border-radius: 0;
+			border: none;
+			height: auto;
+		}
+
+		.navbar-lv .navbar-header {
+			float: none;
+		}
+
+		.navbar-lv .lv-logo {
+			width: 300px;
+		}
+
+		.navbar-lv .navbar-brand {
+			height: auto;
+			display: table;
+			margin: auto !important;
+			float: none;
+		}
+
+		.navbar-lv .navbar-brand span {
+			color: #fff;
+			font-family: serif;
+			font-size: 25px;
+			line-height: 25px;
+			font-weight: bold;
+			display: table-cell;
+			vertical-align: middle;
+		}
+
+		.navbar-lv .navbar-brand img {
+			display: table-cell;
+			vertical-align: middle;
+		}
+	</style>
+	<nav class="navbar navbar-fixed-top navbar-default navbar-lv">
+		<div class="container-fluid">
+	    	<div class="navbar-header">
+	      		<a class="navbar-brand" href="https://www.lavanguardia.com">
+	      			<img src="https://www.lavanguardia.com/rsc/images/lv-logo.svg?v=341b7ff66cc2a86ec4c4d8ad830db40f48fc2e16" class="lv-logo"><span>&nbsp;&nbsp;&nbsp;Pactómetro</span>
+	      		</a>
+	    	</div>
+    	</div>
+    </nav>
+    <!-- END DUROTY -->
+
+	<!-- <div class="fake-header"></div> -->
+
+	<div class="container">
+
+		<h1>
+			Ahora tienes: 
+			<span class="num">
+				<span class="data-seats">0</span> concejales
+			</span>
+		</h1>
+
+		<div class="bar">
+			<div class="fill data-fill"></div>
+			<div class="milestone"></div>
+		</div>
+
+		<div class="dropzone-area">
+
+			<script type="text/template" id="item-template">
+				<div class="item" style="background-color: <%- color %>;">
+					<img class="party" 		src="https://raw.githubusercontent.com/Mariolv/LV-DIVERSOS/master/PACTOMETROS/img/<%- picture %>.jpg">
+					<img class="candidate"  src="https://raw.githubusercontent.com/Mariolv/LV-DIVERSOS/master/PACTOMETROS/img/candidates/<%- picture %>.jpg">
+					<span class="seats"><%- seats %></span>
+				</div>
+			</script>
+
+			<div class="items">
+				<!-- Aquí van los items -->
+			</div>
+
+			<div class="dropzone">
+				<label>
+					Arrastra aquí los partidos<br>
+					para formar una mayoría
+				</label>
+			</div>
+		</div>
+
+		<div class="chart">
+			<div class="chart-wrapper">
+				<div class="milestone"></div>
+				<div class="mayoria">
+					Mayoria absoluta<br> 21 concejales
+				</div>
+				<canvas id="chart-canvas"></canvas>
+			</div>
+		</div>
+
+		<div class="ayuda"></div>
+
+	</div>
+
+
+</body>
+</html>
