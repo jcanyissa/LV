@@ -1,0 +1,106 @@
+<style>
+.caja-proyecto-europa {
+	border-bottom: solid 1px #bdbdbd;
+	margin:0 auto 20px auto;
+	padding:0;
+	}
+.caja-proyecto-europa .contenedor-caja {
+	background-color: #f5f5f5; 
+	border-bottom: solid 1px #ffffff;
+	margin:0;
+	padding:0 15px;
+	vertical-align:top;
+	}
+.caja-proyecto-europa .intro{
+	border-bottom: solid 1px #dbdbdb;
+	text-align:right;
+	}
+.caja-proyecto-europa .logo-europa {  
+	background-image: url("https://reportajes.lavanguardia.com/stamp/wp-content/uploads/sites/19/2019/05/logo-europa-122x29-ok.png");
+	cursor: default;	
+	display:inline-block;
+	float:left;
+	width:122px; 
+	height:29px;
+    margin: 20px 10px 0 0;	
+	}
+.caja-proyecto-europa .logos {  
+	display:block; 
+	list-style:none;
+	margin:10px 0;
+	padding:0;
+	text-align: center;
+	}
+.caja-proyecto-europa .logos li {  
+	display:inline-block; 
+	margin:0;
+	padding:0;
+	} 
+.caja-proyecto-europa .texto-colaboracion {
+	color:#666666;
+	display:inline-block; 
+	font-family: 'Arial', sans-serif; 
+	font-size:14px; 
+	line-height:18px;
+	margin: 18px 0 16px 0;
+	padding:0;
+	text-align:left;
+    vertical-align: top;
+	width:75%;
+}
+@media screen and (max-width: 1024px) {  
+	.caja-proyecto-europa .texto-colaboracion {
+		width:70%;
+		}
+	}
+@media screen and (max-width: 768px) {  
+	.caja-proyecto-europa .texto-colaboracion {
+		width:70%;
+		}
+	} 	
+@media screen and (max-width: 620px) {  
+	.caja-proyecto-europa .texto-colaboracion {
+		width:65%;
+		}
+	} 
+@media screen and (max-width: 438px) {  
+	.caja-proyecto-europa .intro{
+		text-align:center;
+		}
+	.caja-proyecto-europa .logo-europa {  
+		float:inherit;
+		margin: 20px 0 0 0;	
+		}
+	.caja-proyecto-europa .texto-colaboracion {
+		margin: 5px 0 16px 0;
+		text-align: center;
+		width:100%;
+		}
+	} 
+	} 	
+</style>
+<div class="caja-proyecto-europa">
+	<div class="contenedor-caja">
+		<div class="intro">
+			<a class="logo-europa" href="#" title="Proyecto Europa" alt="Proyecto Europa" target="_blank" rel="nofollow"></a>
+			<span class="texto-colaboracion">Este reportaje ha sido realizado en el marco de una colaboración especial de seis diarios europeos: <b>The Guardian</b> (Reino Unido), <b>Süddeutsche Zeitung</b> (Alemania), <b>Le Monde</b> (Francia), La <b>Stampa</b> (Italia), <b>Gazeta Wyborcza</b> (Polonia) y <b>La Vanguardia</b> (España).</span>
+		</div>
+		<ul class="logos">
+			<li>
+				<img src="https://reportajes.lavanguardia.com/stamp/wp-content/uploads/sites/19/2019/05/logo-le-monde-94x38.png" title="Le Monde" alt="Le Monde"/>
+			</li>
+				<img src="https://reportajes.lavanguardia.com/stamp/wp-content/uploads/sites/19/2019/05/logo-the-guardian-78x38.png" title="The Guardian" alt="The Guardian"/>
+			<li>
+			</li>
+				<img src="https://reportajes.lavanguardia.com/stamp/wp-content/uploads/sites/19/2019/05/logo-la-stampa-120x38.png" title="La Stampa" alt="La Stampa"/>
+			<li>
+			</li>
+				<img src="https://reportajes.lavanguardia.com/stamp/wp-content/uploads/sites/19/2019/05/logo-zeitung-154x38.png" title="Süddeutsche Zeitung" alt="Süddeutsche Zeitung"/>
+			<li>
+			</li>
+				<img src="https://reportajes.lavanguardia.com/stamp/wp-content/uploads/sites/19/2019/05/logo-la-vanguardia-120x38.png" title="La Vanguardia" alt="La Vanguardia"/>
+			</li>
+		</ul>
+	</div>
+</div>
+<script src="https://cdn.rawgit.com/duroty/responsive/master/app.embed.js"></script>
